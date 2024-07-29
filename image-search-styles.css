@@ -1,50 +1,67 @@
-body {
-    font-family: Arial, sans-serif;
+/* Basic Reset */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    text-align: center;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
 }
 
 header {
-    background-color: #333;
+    background: #333;
     color: #fff;
-    padding: 10px 0;
+    padding: 1rem 0;
+    text-align: center;
 }
 
-h1 {
-    margin: 0;
+section {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 2rem auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-main {
-    padding: 20px;
-}
-
-form {
-    margin-bottom: 20px;
-}
-
-input[type="text"] {
-    padding: 10px;
-    width: 300px;
-    font-size: 16px;
+#searchInput {
+    width: calc(100% - 100px);
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-right: 10px;
 }
 
 button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #007BFF;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+#results {
+    margin-top: 2rem;
+    text-align: left;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-container img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #333;
     color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-#image-container img {
-    display: inline-block;
-    max-width: 100%;
-    height: auto;
 }
