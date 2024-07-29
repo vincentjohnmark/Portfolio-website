@@ -1,8 +1,30 @@
 function showSection(sectionId) {
-    document.getElementById('home').classList.add('hidden');
-    document.getElementById('about').classList.add('hidden');
-    document.getElementById('projects').classList.add('hidden');
-    document.getElementById('contact').classList.add('hidden');
+    // Hide welcome screen if not on home section
+    if (sectionId === 'home') {
+        document.getElementById('welcome-screen').style.display = 'flex'; // Show welcome screen
+        document.getElementById('main-content').style.display = 'none'; // Hide main content
+    } else {
+        document.getElementById('welcome-screen').style.display = 'none';
+        document.getElementById('main-content').style.display = 'block';
+    }
 
-    document.getElementById(sectionId).classList.remove('hidden');
+    // Hide all sections
+    const sections = document.querySelectorAll('.section');
+    sections.forEach(section => {
+        section.style.display = 'none';
+    });
+
+    // Show the selected section
+    if (sectionId !== 'home') {
+        document.getElementById(sectionId).style.display = 'block';
+    }
 }
+
+// Initial setup to show the welcome screen with typing effect
+document.addEventListener('DOMContentLoaded', () => {
+    const typingEffect = document.getElementById('typing-effect');
+    typingEffect.classList.add('typing-effect');
+
+    // Show home section by default
+    showSection('home');
+});
