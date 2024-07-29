@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about" onclick="showSection('about')">About</a></li>
+                <li><a href="#projects" onclick="showSection('projects')">Projects</a></li>
+                <li><a href="#contact" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="home">
+            <h2>Welcome to my portfolio, I'm Vincent John Mark</h2>
+        </section>
+        <section id="about" class="hidden">
+            <h2>About Me</h2>
+            <p>Hi, I'm Vincent John Mark. I'm currently pursuing a B.Tech in Computer Science and Information Technology at MVGR College, Vizianagaram.</p>
+            <p>I completed my 10th grade at Little Paradise E.M. High School and my 12th grade at Sri Chaitanya Junior College. My journey in education has been driven by a strong passion for technology and innovation.</p>
+            <p>I have a keen interest in web development, which has led me to create various web projects. Additionally, I am fascinated by Artificial Intelligence (AI) and Robotics. These fields excite me due to their potential to revolutionize industries and improve lives. I enjoy exploring new technologies and applying them to solve real-world problems.</p>
+        </section>
+        <section id="projects" class="hidden">
+            <h2>My Projects</h2>
+            <div class="project">
+                <h3>Animal/Bird Image Search</h3>
+                <p>This project allows users to search for images of animals or birds by entering a keyword. It fetches images from Unsplash using their API and displays them on the webpage. This tool is useful for quickly finding and viewing various images based on user input.</p>
+                <a href="image-search/image-search.html" target="_blank">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Weather Forecast</h3>
+                <p>This project provides weather forecasts based on the selected location. It uses the OpenWeatherMap API to fetch and display weather information, including temperature, humidity, and conditions. This is useful for users who need current weather updates for different locations.</p>
+                <a href="weather-forecast/weather-forecast.html" target="_blank">View Project</a>
+            </div>
+        </section>
+        <section id="contact" class="hidden">
+            <h2>Contact</h2>
+            <p>Name: Dondapati Vincent John Mark</p>
+            <p>Email: <a href="mailto:vincentjohnmark006@gmail.com">vincentjohnmark006@gmail.com</a></p>
+            <p>Contact Number: +916281373586</p>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/vincent-john-mark-dondapati-098338261" target="_blank">
+                    <img src="https://images.rawpixel.com/image_png_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjk4Mi1kMy0xMC5wbmc.png" alt="LinkedIn" class="social-icon">
+                </a>
+                <a href="https://www.instagram.com/vincentjohnmark" target="_blank">
+                    <img src="https://e7.pngegg.com/pngimages/672/312/png-clipart-instagram-logo-icon-others-text-photography-thumbnail.png" alt="Instagram" class="social-icon">
+                </a>
+            </div>
+        </section>
+    </main>
+    <script src="scripts.js" defer></script>
+</body>
+</html>

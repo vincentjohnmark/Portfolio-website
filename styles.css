@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+    background-image: url('https://coolbackgrounds.io/images/backgrounds/index/compute-ea4c57a4.png');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    color: #FF5733; /* Vibrant color for headings */
+}
+
+.hidden {
+    display: none;
+}
+
+.home {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: #FFD700; /* Vibrant color for home message */
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for sections */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: left;
+    max-width: 80%;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    color: #FF5733; /* Vibrant color for project titles */
+}
+
+.project p {
+    font-size: 16px;
+}
+
+.project a {
+    color: #1E90FF;
+    text-decoration: none;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+}
