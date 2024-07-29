@@ -3,58 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about" onclick="showSection('about')">About</a></li>
-                <li><a href="#projects" onclick="showSection('projects')">Projects</a></li>
-                <li><a href="#contact" onclick="showSection('contact')">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="home" class="home">
-            <h2>Welcome to my portfolio, I'm Vincent John Mark</h2>
-        </section>
-        <section id="about" class="hidden">
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showSection('home'); return false;">Home</a></li>
+            <li><a href="#" onclick="showSection('about'); return false;">About</a></li>
+            <li><a href="#" onclick="showSection('projects'); return false;">Projects</a></li>
+            <li><a href="#" onclick="showSection('contact'); return false;">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Welcome Screen -->
+    <div id="welcome-screen">
+        <div class="welcome-message">
+            <h1 id="typing-effect">Welcome to my portfolio, I'm Vincent John Mark</h1>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content">
+        <!-- Home Section -->
+        <div id="home" class="section">
+            <!-- Home section will be shown by default with typing effect -->
+        </div>
+
+        <!-- About Section -->
+        <div id="about" class="section">
             <h2>About Me</h2>
-            <p>Hi, I'm Vincent John Mark. I'm currently pursuing a B.Tech in Computer Science and Information Technology at MVGR College, Vizianagaram.</p>
-            <p>I completed my 10th grade at Little Paradise E.M. High School and my 12th grade at Sri Chaitanya Junior College. My journey in education has been driven by a strong passion for technology and innovation.</p>
-            <p>I have a keen interest in web development, which has led me to create various web projects. Additionally, I am fascinated by Artificial Intelligence (AI) and Robotics. These fields excite me due to their potential to revolutionize industries and improve lives. I enjoy exploring new technologies and applying them to solve real-world problems.</p>
-        </section>
-        <section id="projects" class="hidden">
+            <p>Completed 10th in Little Paradise E.M. High School, 12th in Sri Chaitanya Junior College. Currently, I'm pursuing Computer Science and Information Technology in B.Tech(2022-26) in Maharaj Vijayaram Gajapathi Raj College of Engineering.</p>
+            <p>I have a deep interest in web development, AI, and robotics. I am passionate about creating innovative solutions and enjoy working on challenging projects. I also created a few mini website projects that showcase how to be accessed.</p>
+	    <p>My journey in web development has been exciting, and I continuously strive to improve my skills and knowledge in the field. I am eager to leverage my skills in creating impactful digital solutions. I'm also interested in the AI technologies and Robotics which s my childhood ambition. So, I'm even trying to increase my knowledge in these streams as they are the stumbling blocks for the upcoming future.</p>
+        </div>
+
+        <!-- Projects Section -->
+        <div id="projects" class="section">
             <h2>My Projects</h2>
-            <div class="project">
-                <h3>Animal/Bird Image Search</h3>
-                <p>This project allows users to search for images of animals or birds by entering a keyword. It fetches images from Unsplash using their API and displays them on the webpage. This tool is useful for quickly finding and viewing various images based on user input.</p>
-                <a href="image-search/image-search.html" target="_blank">View Project</a>
-            </div>
-            <div class="project">
-                <h3>Weather Forecast</h3>
-                <p>This project provides weather forecasts based on the selected location. It uses the OpenWeatherMap API to fetch and display weather information, including temperature, humidity, and conditions. This is useful for users who need current weather updates for different locations.</p>
-                <a href="weather-forecast/weather-forecast.html" target="_blank">View Project</a>
-            </div>
-        </section>
-        <section id="contact" class="hidden">
+            <ul>
+                <li>
+                    <a href="image-index.html" target="_blank">Animal Image Search</a> - A project to search and display images of animals or birds using the Unsplash API. This project allows users to input the name of an animal or bird and see related images along with details.
+                </li>
+                <li>
+                    <a href="weather-index.html" target="_blank">Weather Forecast</a> - A project to display weather forecasts based on the selected location using the OpenWeatherMap API. Users can select a location from a list to view the current weather and forecast details.
+                </li>
+            </ul>
+        </div>
+
+        <!-- Contact Section -->
+        <div id="contact" class="section">
             <h2>Contact</h2>
             <p>Name: Dondapati Vincent John Mark</p>
             <p>Email: <a href="mailto:vincentjohnmark006@gmail.com">vincentjohnmark006@gmail.com</a></p>
             <p>Contact Number: +916281373586</p>
-            <div class="social-media">
-                <a href="https://www.linkedin.com/in/vincent-john-mark-dondapati-098338261" target="_blank">
-                    <img src="https://images.rawpixel.com/image_png_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjk4Mi1kMy0xMC5wbmc.png" alt="LinkedIn" class="social-icon">
-                </a>
-                <a href="https://www.instagram.com/vincentjohnmark" target="_blank">
-                    <img src="https://e7.pngegg.com/pngimages/672/312/png-clipart-instagram-logo-icon-others-text-photography-thumbnail.png" alt="Instagram" class="social-icon">
-                </a>
-            </div>
-        </section>
-    </main>
-    <script src="scripts.js" defer></script>
+            <p>Follow me on:</p>
+            <a href="https://www.linkedin.com/in/vincent-john-mark-dondapati-098338261" target="_blank">
+                <img src="https://images.rawpixel.com/image_png_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjk4Mi1kMy0xMC5wbmc.png" alt="LinkedIn" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com/vincentjohnmark" target="_blank">
+                <img src="https://e7.pngegg.com/pngimages/672/312/png-clipart-instagram-logo-icon-others-text-photography-thumbnail.png" alt="Instagram" class="social-icon">
+            </a>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
