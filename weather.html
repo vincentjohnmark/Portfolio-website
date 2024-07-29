@@ -2,26 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale, 1.0">
     <title>Weather Forecast</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="weather-styles.css">
 </head>
 <body>
     <header>
         <h1>Weather Forecast</h1>
     </header>
-    <section>
-        <label for="locationSelect">Select a location:</label>
-        <select id="locationSelect">
-            <option value="">--Choose a location--</option>
+
+    <section id="weather">
+        <h2>Select a Location</h2>
+        <select id="locationSelect" onchange="fetchWeather()">
+            <option value="">Select a location</option>
             <option value="London">London</option>
             <option value="New York">New York</option>
             <option value="Tokyo">Tokyo</option>
-            <!-- Add more locations as needed -->
+            <option value="Sydney">Sydney</option>
+            <option value="Mumbai">Mumbai</option>
         </select>
-        <button onclick="fetchWeather()">Get Weather</button>
         <div id="weatherInfo"></div>
     </section>
-    <script src="weather-script.js"></script>
+
+    <footer>
+        <p>&copy; 2024 Dondapati Vincent John Mark</p>
+    </footer>
+
+    <script src="weather-scripts.js"></script>
 </body>
 </html>
